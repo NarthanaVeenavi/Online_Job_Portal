@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../src/styles/nav.css">
+        <link rel="stylesheet" type="text/css" href="../src/styles/register.css">
+        <link rel="stylesheet" type="text/css" href="../src/styles/footer.css">
+        <link rel="stylesheet" type="text/css" href="../src/styles/Registartiontype.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Register-premier</title>
+    </head>
+    <body>
+        <hr style="border: 0.1px solid rgba(143, 124, 124, 0.747)">
+        <div>
+            <a href=""><img id="logo" src="../src/images/Annotation 2020-03-09 133301.png"></a>
+        </div>
+        <div class="heading1">
+            <h1>Premier</h1>
+        </div>
+        <div>
+            <a href="../src/log.html"><button type="Loging" class="btn" style="margin-left: 28cm; margin-top: -1.7cm;">Log In</button></a>
+                <div style="margin-left: 15cm;">
+                <div style="margin-left: -1cm;">
+                    <button type="Register" class="btn" onclick="document.getElementById('choose').style.display='block'" style="cursor: pointer; margin-left: 18cm; margin-top: -1.7cm;">Register</button>
+                    <div id="choose" class="backgr">
+                        <div class="backgr-content animate">
+                            <div class="imgposition">
+                                <span onclick="document.getElementById('choose').style.display='none'" class="close">&times;</span>
+                            </div>
+                            <div class="container">
+                                <a href="../src/registerEmp.html"><button class="btn22">REGISTRATION/ EMPLOYER</button></a><br><br>
+                                <a href="../src/registration.html"><button class="btn22">REGISTRATION/ JOB SEEKER</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript" src="../src/js/registerType.js"></script>
+                </div>
+            <a href=""><button type="post a job" class="btn" style="margin-left: 21cm; margin-top: -1.7cm;">Post a job</button></a>
+        </div>
+        <hr style="margin-top: 2.6cm; border: 0.1px solid rgba(143, 124, 124, 0.747)">
+        <nav>
+            <ul id="Ulist">
+                <li class="list11"><a>Home</a></li>
+                <li class="list11" id="dropdown1">
+                    <a class="dropbtn" href="">Jobs</a>
+                    <div class="dropdown-content">
+                        <a href="">Engineering</a>
+                        <hr style="color: chocolate; border-width: 1px;">
+                        <a href="">Accounting</a>
+                        <hr style="color: chocolate; border-width: 1px;">
+                        <a href="">Media and Communication</a>
+                        <hr style="color: chocolate; border-width: 1px;">
+                        <a href="">Information Technology</a>
+                        <hr style="color: chocolate; border-width: 1px;">
+                        <a href="">Social and Health Care</a>
+                        <hr style="color: chocolate; border-width: 1px;">
+                        <a href="">Agriculture and Food Science</a>
+                    </div>
+                </li>
+                <li class="list11"><a href="">Companies</a></li>
+                <li class="list11"><a href="../src/blog listing.html">Blogs</a></li>
+            </ul>
+            <form class="searchbar">
+                <input id="srch" type="text" placeholder="Job Title,Company or Keyword..." name="search" style="max-width: 275px; height: 1.1cm;">
+                <button id="submitbtn1" type="submit"></button>
+            </form>
+            <img id="search" src="../src/images/magnifying-glass.png">
+            <a href=""><button type="Location" class="btn2" style="margin-left: 36cm;"><img title="Location" id="location" src="../src/images/location.jpg"></button></a>
+        </nav>
+        <form id="form1" onsubmit="return checkPassword()" method="POST" action="../src/php/register1.php">
+            <br>
+            <div class="margin2">
+                <legend><span style="font-weight: bold; font-size: 20px;">Registration Details</span></legend><br>
+                <label for="fname">Full Name :</label><br>
+                <input type="text" id="fullname" name="full_name" placeholder="Full Name" required autofocus>
+                <br>
+                <label for="lname">NIC  :</label><br>
+                <input type="text" id="nicNo" name="nic" placeholder="NIC number" required>
+                <br>
+                <label for="pnumber">Telephone Number :</label><br>
+                <input type="text" id="tel" name="tel" placeholder=" +94 xxxxxxxxxx" maxlength="13" required>
+                <br>
+                <label for="email">E-mail Address :</label><br>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <br>
+                <label for="District">
+                    District :
+                </label>
+                <br>
+                <select id="disrrict" name="district" required>
+                    <option value="Select your disrict">Select your disrict</option>
+                    <option value="Ampara">Ampara</option>
+                    <option value="Anuradhapura">Anuradhapura</option>
+                    <option value="Badulla">Badulla</option>
+                    <option value="Batticaloa">Batticaloa</option>
+                    <option value="Colombo">Colombo</option>
+                    <option value="Galle">Galle</option>
+                    <option value="Gampaha">Gampaha</option>
+                    <option value="Hambantota">Hambantota</option>
+                    <option value="Jaffna">Jaffna</option>
+                    <option value="Kalutara">Kalutara</option>
+                    <option value="Kandy">Kandy</option>
+                    <option value="Kegalle">Kegalle</option>
+                    <option value="Kilinochchi">Kilinochchi</option>
+                    <option value="Kurunegala">Kurunegala</option>
+                    <option value="Mannar">Mannar</option>
+                    <option value="Matale">Matale</option>
+                    <option value="Matara">Matara</option>
+                    <option value="Monaragala">Monaragala</option>
+                    <option value="Mullaitivu">Mullaitivu</option>
+                    <option value="Nuwara Eliya">Nuwara Eliya</option>
+                    <option value="Polonnaruwa">Polonnaruwa</option>
+                    <option value="Puttalam">Puttalam</option>
+                    <option value="Ratnapura">Ratnapura</option>
+                    <option value="Trincomalee">Trincomalee</option>
+                    <option value="Vavuniya">Vavuniya</option>
+                </select>  
+                <br>
+                <label for="password">Password :</label><br>
+                <input type="password" id="pwd2" name="pwd2" placeholder="create a password" required>
+                <img src="../src/images/eye.jpg" class="eye" onclick="passwordVisibility()" style="margin-left: -1.25cm; margin-top: 0.3cm;"> 
+
+                <br>
+                <label for="password">Confirm Password :</label>
+                <input type="password" id="cnfrmpw" name="cnfrmpw" placeholder="Confirm Password" required>
+                <img src="../src/images/eye.jpg" class="eye" onclick="passwordShow()" style="margin-left: -1.23cm; margin-top: 0.29cm;"> 
+                <div>
+                    <input type="checkbox" name="check" id="checkBox" onclick="enableButton()"><span style="font-size: 17px; color: rgb(3, 3, 83); ">I am not a Robot</span>
+                    <img id="reCAPTCHA" style="margin-left: 0.5cm" src="../src/images/reCaptcha.png">
+                </div>
+                
+                <button id="submitBtn" name="submitBtn" style="margin-left: 10cm;" type="submit" value="Reister" disabled>Register</button> 
+                <script type="text/javascript" src="../src/js/Register.js"></script>
+            </div>   
+        </form>
+        <div class="div111">
+            <form id="form2" method="POST" action="../src/php/fileUpload.php" enctype="multipart/form-data">
+               <div>
+                   <h2 style="margin-left: 1cm;">Upload CV</h2>
+                    <input type="file" class="btn111" name="uploadFile"><br><br><br>
+               </div>
+               <div style=" margin-top: -2.8cm; margin-left: 11cm;">
+                    <input type="submit" id="uploadbtn" name="uploadButton" value="Upload CV">
+                </div>    
+               <br><br><br><br><br>
+               <img src="../src/images/Annotation 2020-03-09 133301.png" style="width: 5cm; height: 5cm; margin-left: 7cm; border-radius: 50%;">
+                <div style="margin-left: 3cm; font-size: 18px; margin-top: 2cm;">
+                    <p style="font-size: 34px; color: rgb(20, 20, 19); margin-left: 4cm;"><b>Privacy Policy</b></p>
+                    <p >By signing in to your account. You agree to indeed's <a href=""><span style="color: rgb(42, 9, 228);">Terms of Services</span></a>
+                    <p style="margin-left: 2.8cm;"> and consent to our <a href=""><span style="color: rgb(42, 9, 228);">Cookie Policy.</span></a>
+                    </p><p>This site is protected by reCAPTCHA and Google <a href="https://policies.google.com/terms?hl=en_US"><span style="color: rgb(42, 9, 228);">Privacy and policy</span></a>
+                    </p> <p style="margin-left: 3.5cm;">and <a href=""><span style="color: rgb(42, 9, 228);">Terms of Service</span></a> apply.</p>
+                </div>
+                <br>
+                <br>
+            </form>
+        </div> 
+        <footer id="footer" style="margin-top: 2.54cm;">
+            <br>
+            <div>
+                <ul id="list1">
+                    <li class="list1"><a href="#">Privacy Policy </a></li>
+                    <li class="list1"><a href="../src/AboutUs.html">About Us </a></li>
+                    <li class="list1"><a href="#">Contact Us </a></li>
+                    <li class="list1"><a href="">Support Page</a></li>
+                </ul> 
+                <p id="paragraph">Follow Us On</p>
+                <div class="footer-social-media-icons">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/explore" target="blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.google.com/" target="blank"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="blank"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div id="paragraph2">
+                    <p>E-mail Us :</p>
+                    <p id="address" style="font-style: italic;">&nbsp;&nbsp;&nbsp;premierjobs@email.com</p>
+                    <p>Contact Us:</p>
+                    <p>&nbsp;&nbsp;&nbsp;077-6745895</p>
+                </div>
+                <div id="footer_div1">
+                    <h1 id="footer_topic">Premier</h1>
+                </div>
+                <div id="copy">
+                    <p id="copyright">ALL COPYRIGHTS RESERVED BY THE Premier - &copy;2020 Premier</p>
+                </div>
+    
+            </div>
+        </footer>
+    </section>
+</body>
+</html> 

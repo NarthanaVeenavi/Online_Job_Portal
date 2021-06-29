@@ -1,0 +1,149 @@
+#logo{
+    position: absolute;
+    width: 2.2cm;
+    height: 2.2cm;
+    margin-left: 0.2cm;
+    border-radius: 50%;
+}
+.heading1{
+    position: absolute;
+    font-size: 25px;
+    color: red;
+    font-family: monospace;
+    margin-left: 2.7cm;
+    margin-top: -0.5cm;
+}
+#Ulist{
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-left: 0cm;
+    background-color: silver;
+}
+.list11{
+    float: left;
+    cursor: pointer;
+}
+.btn{
+    margin-top: 0.65cm;
+    position: absolute;
+    color: white;
+    height: 1cm;
+    width: 2.7cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: rgba(1, 1, 59, 0.8);
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid rgb(1, 1, 59);
+
+    
+}
+.btn2{
+    position: absolute;
+    margin-top: -1.56cm;
+    height: 1.19cm;
+    width: 2.6cm;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid rgb(1, 1, 59);
+
+}
+#location{
+    height: 1.15cm;
+    width: 2.4cm;
+    margin-left: -0.1cm;
+}
+.btn:hover{
+    background-color: silver;
+    color: black;
+}
+.list11 a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0.6;
+}
+
+.list11 a:hover{
+    color: rgb(252, 10, 10);
+}
+.active{
+    background-color: blanchedalmond;
+}
+.dropdown-content a{
+    color: black;
+    padding: 3px 3px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 16px;
+}
+.dropdown-content a:hover{
+    color: rgb(252, 10, 10);
+}
+#dropdown1:hover .dropdown-content{
+    display: block;
+}
+li#dropdown1{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: silver;
+    border: 0.5px dotted hotpink;
+    border-radius: 7px;
+    z-index: 1;
+    margin-left: -50px;
+}
+
+#srch{
+    padding: 10px;
+    font-size: 17px;
+    border: 2px solid rgba(24, 23, 23, 0.801);
+    border-radius: 10px;
+    float: left;
+    width: 80%;
+    background-color: rgba(214, 205, 205, 0.5);
+    margin-top: -1.52cm;
+    z-index: 1;
+    height: 0.45cm;
+    margin-left: 26cm;
+}
+#submitbtn1{
+    float: left;
+    width: 1.4cm;
+    padding: 2px;
+    background-color: rgba(214, 205, 205, 0.5);
+    color: white;
+    font-size: 25px;
+    border: 2px solid rgba(24, 23, 23, 0.801);
+    border-radius: 13px;
+    cursor: pointer;
+    margin-top: -1.525cm;
+    margin-left: 34.1cm;
+    height: 1.09cm;
+}
+#submitbtn1:hover,#srch:hover{
+    background: rgba(214, 205, 205, 0.7);
+}
+#search{
+    position: absolute;
+    width: 0.75cm;
+    height: 0.75cm;
+    margin-left: 34.4cm;
+    margin-top: -1.3cm;
+    opacity: 0.3;
+}
+

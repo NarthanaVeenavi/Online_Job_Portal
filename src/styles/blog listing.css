@@ -1,0 +1,122 @@
+body{
+    background-image: url("../images/background image3.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+#blogDiv1{
+    position: absolute;
+    width: 21cm;
+    height: 7cm;
+    background-color: white;
+    border-radius: 6px;
+}
+#blog1img{
+    margin-top: 1cm;
+    margin-left: 1cm;
+    width: 7cm;
+    height: 4cm;
+}
+#blog1header{
+    margin-left: 8.7cm;
+    margin-top: -4.5cm;
+}
+.readmore{
+    color: cornflowerblue;
+}
+.readmore a{
+    text-decoration: none;
+}
+.readmore a:hover{
+    color: darkblue;
+}
+.blog{
+    width: 10cm;
+    height: 13cm;
+    border-radius: 6px;
+    background-color: white;
+}
+#blogDiv2{
+    position: absolute;
+    margin-top: 7.7cm;
+}
+#blogDiv3{
+    position: absolute;
+    margin-top: 7.7cm;
+    margin-left: 11cm;
+}
+.blogimg{
+    width: 10cm;
+    height: 6cm;
+    border-radius: 6px;
+}
+#blogDiv4{
+    position: absolute;
+    margin-top: 21.5cm;
+    margin-left: 0cm;
+}
+#blogDiv5{
+    position: absolute;
+    margin-top: 21.5cm;
+    margin-left: 11cm;
+}
+#blogDiv7{
+    position: absolute;
+    margin-top: 35.3cm;
+    margin-left: 11cm;
+}
+#blogDiv6{
+    position: absolute;
+    margin-top: 35.3cm;
+    margin-left: 0cm;
+}
+#bloglist1{
+    position: absolute;
+    width: 6.5cm;
+    height: 17cm;
+    margin-left: 27.8cm;
+    margin-top: 0cm;
+    background-color: white;
+    border-radius: 6px;
+}
+#searchbar2{
+    width: 5.5cm;
+    height: 1cm;
+    margin-left: 0.5cm;
+}
+#submitbutton2{
+    width: 5.5cm;
+    height: 1cm;
+    margin-left: 0.5cm;
+    background-color: white;
+    border: 2px blue solid;
+    cursor: pointer;
+}
+#submitbutton2:hover{
+    background-color: blue;
+    color: white;
+}
+#blogul{
+    list-style-type: none;
+    margin-left: -0.5cm;
+}
+.blogli1 a{
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+}
+.blogli1 a:hover{
+    color: blueviolet;
+}
+#btngroup{
+    padding: 14px 24px;
+    float: left;
+    margin-top: 49cm;
+    margin-left: 12cm;
+}
+.btnn{
+    width: 1cm;
+    height: 1cm;
+}
+#btngroup .btnn:hover{
+    background-color: darkkhaki;
+}

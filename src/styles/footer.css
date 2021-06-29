@@ -1,0 +1,107 @@
+#footer {
+    position: absolute;
+    width: 100%;
+    height: 6cm;
+    background-color: rgb(3, 3, 54);
+
+}
+#list1{
+    position: absolute;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: transparent;
+    margin-top: 0cm;
+    margin-left: 10.5cm;
+}
+.list1 a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.list1{
+    float: left;
+}
+.list1 a:hover{
+    color: red;
+}
+#footer_topic{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    font-family: monospace; 
+}
+#paragraph{
+    position: absolute;
+    font-size: 20px;
+    margin-left: 30cm;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0.5cm;
+    color: white;
+}
+#footer_div1{
+    position: absolute;
+    margin-left: 16.5cm;
+    margin-top: 1.6cm;
+}
+#copyright{
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    opacity: 0.6;
+    margin-left: 1.5cm;
+}
+#paragraph2{
+    position: absolute;
+    color: rgb(210, 243, 243);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0cm;
+    margin-left: 2cm;
+}
+#address:hover {
+    color: red;
+}
+.footer-social-media-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 2cm;
+    position: absolute;
+}
+.footer-social-media-icons ul{
+    margin: 0px;
+    padding: 0px;
+    margin-left: 25cm;
+    text-align: center;
+}
+.footer-social-media-icons ul li{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background-color: #00A86B;
+}
+.footer-social-media-icons ul li a{
+    color: blue;
+    font-size: 20px;
+    display: block;
+}
+.footer-social-media-icons ul li a i{
+    line-height: 43px;
+}
+.footer-social-media-icons ul li:hover{
+    background: white;
+}
+.footer-social-media-icons ul li a:hover{
+    color: black;
+}
+#copy{
+    margin-top: 4.4cm;
+    margin-left: 14cm;
+    position: absolute;
+}

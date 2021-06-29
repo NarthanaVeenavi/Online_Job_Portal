@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../src/styles/nav.css">
+        <link rel="stylesheet" type="text/css" href="../src/styles/registerEmp.css">
+        <link rel="stylesheet" type="text/css" href="../src/styles/footer.css">
+        <link rel="stylesheet" type="text/css" href="../src/styles/Registartiontype.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Registration(Employer)-Premier</title>
+    </head>
+    <body>
+        <hr style="border: 0.1px solid rgba(143, 124, 124, 0.747)">
+        <div>
+            <a href=""><img id="logo" src="../src/images/Annotation 2020-03-09 133301.png"></a>
+        </div>
+        <div class="heading1">
+            <h1>Premier</h1>
+        </div>
+        <div>
+            <a href="../src/log.html"><button type="Loging" class="btn" style="margin-left: 28cm; margin-top: -1.7cm;">Log In</button></a>
+                <div style="margin-left: 15cm;">
+                <div style="margin-left: -1cm;">
+                    <button type="Register" class="btn" onclick="document.getElementById('choose').style.display='block'" style="cursor: pointer; margin-left: 18cm; margin-top: -1.7cm;">Register</button>
+                    <div id="choose" class="backgr">
+                        <div class="backgr-content animate">
+                            <div class="imgposition">
+                                <span onclick="document.getElementById('choose').style.display='none'" class="close">&times;</span>
+                            </div>
+                            <div class="container">
+                                <a href="../src/registerEmp.html"><button class="btn22">REGISTRATION/ EMPLOYER</button></a><br><br>
+                                <a href="../src/registration.html"><button class="btn22">REGISTRATION/ JOB SEEKER</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript" src="../src/js/registerType.js"></script>
+                </div>
+            <a href=""><button type="post a job" class="btn" style="margin-left: 21cm; margin-top: -1.7cm;">Post a job</button></a>
+        </div>
+        <hr style="margin-top: 2.6cm; border: 0.1px solid rgba(143, 124, 124, 0.747)">
+        </div>    
+        <nav>
+            <ul id="Ulist">
+                <li class="list11"><a href="">Home</a></li>
+                <li class="list11" id="dropdown1">
+                    <a class="dropbtn" href="">Jobs</a>
+                    <div class="dropdown-content">
+                        <a href="">Engineering</a>
+                        <hr style="color: chocolate; border-width: 1px;">
+                        <a href="">Accounting</a>
+                        <hr style="color: chocolate; border-width: 1px;">
+                        <a href="">Media and Communication</a>
+                        <hr style="color: chocolate; border-width: 1px;">
+                        <a href="">Information Technology</a>
+                        <hr style="color: chocolate; border-width: 1px;">
+                        <a href="">Social and Health Care</a>
+                        <hr style="color: chocolate; border-width: 1px;">
+                        <a href="">Agriculture and Food Science</a>
+                    </div>
+                </li>    
+                <li class="list11"><a href="">Companies</a></li>
+                <li class="list11"><a href="../src/blog listing.html">Blogs</a></li>
+            </ul>
+            <form class="searchbar">
+                <input id="srch" type="text" placeholder="Job Title,Company or Keyword..." name="search" style="max-width: 300px; height: 1.1cm; width: 8cm;">
+                <button id="submitbtn1" type="submit"></button>
+            </form>
+            <img id="search" src="../src/images/magnifying-glass.png">
+            <a href=""><button type="Location" class="btn2" style="margin-left: 36cm;"><img title="Location" id="location" src="../src/images/location.jpg"></button></a>
+        </nav>
+        <form id="form1" onsubmit="return checkPassword()" method="POST" action="../src/php/register2.php">
+            <br>
+            <fieldset class="margin">
+                <legend>
+                    Registration Details
+                </legend>
+                <br>
+                <table class="table1">
+                    <tr>
+                        <td>
+                            <label for="fname">
+                                First Name :
+                            </label>
+                            <br>
+                            <input type="text" id="fname" name="firstname" placeholder="Your first name.." required autofocus>
+                        </td>
+                        <td>
+                            <label for="lname"> &nbsp;&nbsp;&nbsp;
+                                Last Name :
+                            </label>
+                            <br>
+                            <input style="margin-left: 1cm;" type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table class="table1">
+                    <tr>
+                        <td>
+                            <label for="company">
+                                Company Name:
+                            </label>
+                            <br>
+                                <input type="text" name="company" placeholder="Comapany name.." required>
+                        </td>
+                        <td>
+                            <label for="idno"> &nbsp;&nbsp;&nbsp;
+                                National Identitycard Number :
+                            </label>
+                            <br>
+                            <input style="margin-left: 1cm;" type="text" id="nic" name="nic" placeholder=" xxxxxxxxxxxxxxx" required> 
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <label for="tel">
+                    Telephone Number :
+                </label>
+                <br>
+                <input style="width: 30%;" type="text" id="tel" name="tel" placeholder=" +94 xxxxxxxxxx" maxlength="13" required>
+                <br>
+                <br>
+                <label for="emil">
+                    Email Address :
+                </label>
+                <br>
+                <input style="width: 60%;" type="text" id="email" name="email" placeholder="example@gmail.com" required>
+                <br>
+                <br>
+               
+                <table class="table1">
+                    <tr>
+                        <td>
+                            <label for="District">
+                                District :
+                            </label>
+                            <br>
+                            <select id="district" name="district" required>
+                                <option value="Select your disrict">Select your disrict</option>
+                                <option value="Ampara">Ampara</option>
+                                <option value="Anuradhapura">Anuradhapura</option>
+                                <option value="Badulla">Badulla</option>
+                                <option value="Batticaloa">Batticaloa</option>
+                                <option value="Colombo">Colombo</option>
+                                <option value="Galle">Galle</option>
+                                <option value="Gampaha">Gampaha</option>
+                                <option value="Hambantota">Hambantota</option>
+                                <option value="Jaffna">Jaffna</option>
+                                <option value="Kalutara">Kalutara</option>
+                                <option value="Kandy">Kandy</option>
+                                <option value="Kegalle">Kegalle</option>
+                                <option value="Kilinochchi">Kilinochchi</option>
+                                <option value="Kurunegala">Kurunegala</option>
+                                <option value="Mannar">Mannar</option>
+                                <option value="Matale">Matale</option>
+                                <option value="Matara">Matara</option>
+                                <option value="Monaragala">Monaragala</option>
+                                <option value="Mullaitivu">Mullaitivu</option>
+                                <option value="Nuwara Eliya">Nuwara Eliya</option>
+                                <option value="Polonnaruwa">Polonnaruwa</option>
+                                <option value="Puttalam">Puttalam</option>
+                                <option value="Ratnapura">Ratnapura</option>
+                                <option value="Trincomalee">Trincomalee</option>
+                                <option value="Vavuniya">Vavuniya</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="City">
+                                City :
+                            </label>
+                            <br>
+                            <input style="width: 80%;" type="text" id="city" name="city" placeholder="city.." required>
+                        </td>
+                        <td>
+                            <label for="Citycode">
+                                Postal Code:
+                            </label>
+                            <br>
+                            <input style="width: 100%"; type="text" id="code" name="code" placeholder="Postal code.." required>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <fieldset class="margin">
+
+                    <legend>
+                        Validation
+                    </legend>
+                    <br>
+                    <label for="pws2">
+                        Password :
+                    </label>
+                    <br>
+                    <input style="width: 30%; height: 1cm;" type="password" id="pwd2" name="pws2" maxlength="10" required>
+                    <img src="../src/images/eye.jpg" class="eye" onclick="passwordVisibility()" style="margin-left: -1.25cm; margin-top: 0.2cm;"> 
+                    <p style="font-size: 15px;">Must contain less than 10 Characters</p>
+                    <br>
+                    <label for="pws2">
+                    Confirm Password :
+                    </label>
+                    <br>
+                    <input style="width: 30%; height: 1cm;" type="password" id="cnfrmpw" name="pws2" maxlength="10" required>
+                    <img src="../src/images/eye.jpg" class="eye" onclick="passwordShow()" style="margin-left: -1.23cm; margin-top: 0.19cm;"> 
+                    <script type="text/javascript" src="../src/js/Register.js"></script>
+                </fieldset>
+            </fieldset>
+            <br>
+            <div>
+                <p id="privacy"><span style="color: red;">*</span><span style="font-weight: normal; font-size: 16px;">By Signing in to your account, you agree to Voting Hub's <a href="">Terms of Services</a>
+                     and consent to our <a href="">Cookie Policy</a> and <a href="">Privacy Policy.</a>This site is protected by reCAPTCHA 
+                     and the Google <a href="">Privacy Policy</a> and <a href="">Terms of Service</a> apply.</span></p>
+            </div>
+
+            <div style="margin-left: 3cm;">
+                <input type="checkbox" id="check1" onclick="enableButton()" name="checkbox1"><b style="font-size: 17px; ">I am not a Robot</b>
+                <img id="recap" style="margin-left: 0.3cm;" src="../src/images/reCAPTCHA.png">
+            </div>
+            <script type="text/javascript" src="../src/js/registerEmp.js"></script>
+            <table id="table2">
+                <tr>
+                    <td>
+                        <input type="reset" value="Reset">
+                    </td>
+                    <td> 
+                        <input type="submit" id="sub1" name="submitButton" value="Register" disabled>
+                    </td>
+                </tr>
+            </table>
+        </form> 
+        <footer id="footer" style="margin-top: 36cm;">
+            <br>
+            <div>
+                <ul id="list1">
+                    <li class="list1"><a href="#">Privacy Policy </a></li>
+                    <li class="list1"><a href="../src/AboutUs.html">About Us </a></li>
+                    <li class="list1"><a href="#">Contact Us </a></li>
+                    <li class="list1"><a href="">Support Page</a></li>
+                </ul> 
+                <p id="paragraph">Follow Us On</p>
+                <div class="footer-social-media-icons">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/explore" target="blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.google.com/" target="blank"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="blank"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div id="paragraph2">
+                    <p>E-mail Us :</p>
+                    <p id="address" style="font-style: italic;">&nbsp;&nbsp;&nbsp;premierjobs@email.com</p>
+                    <p>Contact Us:</p>
+                    <p>&nbsp;&nbsp;&nbsp;077-6745895</p>
+                </div>
+                <div id="footer_div1">
+                    <h1 id="footer_topic">Premier</h1>
+                </div>
+                <div id="copy">
+                    <p id="copyright">ALL COPYRIGHTS RESERVED BY THE Premier - &copy;2020 Premier</p>
+                </div>
+    
+            </div>
+        </footer>
+    </body>
+</html>   
+

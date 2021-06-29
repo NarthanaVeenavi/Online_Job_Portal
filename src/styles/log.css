@@ -1,0 +1,54 @@
+body{
+    background-image: url("../images/think-professional.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#div1{
+    position: absolute;
+    width: 13cm;
+    height: 17cm;
+    background-color: rgb(201, 202, 218);
+    border-radius: 5px;
+    margin-top: 1.5cm;
+    margin-left: 13cm;
+}
+.text1{
+    width: 9cm;
+    height: 1cm;
+    border-radius: 4px;
+}
+#loginform{
+    margin-left: 2cm;
+    margin-top: 1cm;
+}
+.submitB{
+    margin-left: 0.5cm;
+    color: white;
+    background-color: blue;
+    border-radius: 7px;
+    width: 8cm;
+    height: 1.2cm;
+    cursor: pointer;
+}
+.submitB:hover{
+    background-color: rgb(57, 57, 187);
+}
+.loginwith{
+    width: 9cm;
+    height: 1.1cm;
+    margin-left: 2cm;
+    cursor: pointer;
+}
+.loginwith:hover{
+    background-color: cadetblue;
+}
+.icons{
+    position: absolute;
+    width: 0.8cm;
+    height: 0.8cm;
+    margin-left: -7.5cm;
+}
+#submitBu:enabled{
+    background-color: darkblue;
+    color: white;
+}
